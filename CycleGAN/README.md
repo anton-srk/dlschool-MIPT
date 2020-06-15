@@ -7,6 +7,18 @@ Image scraping was done using the code from __google_images_scrape.py__ (keyword
 Existing solution was mostly done following the logic and code from the original paper (see https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). Resulting images look like the following:
 ![horse2zebra](images/horses/4.png)
 ![zebra2horse](images/horses/_4.png)  
+The pretrained models are located in the "models" folder.
 
+The second part of the homework was based on a custom fox2raccoon dataset consisting of approximately 3000 images scraped from Google. The CycleGAN used for it was mostly the same as in the first part, except for the Generator architecture, which was varied. Namely, ResUNet (adapted from https://link.springer.com/chapter/10.1007/978-3-030-00889-5_18) and original UNet (https://arxiv.org/pdf/1505.04597.pdf) were implemented. The comparison of the said models is presented below:
 
-The second part of the homework was based on a custom fox2raccoon dataset consisting of approximately 3000 images scraped from Google. The CycleGAN used for it was mostly the same as in the first part except for the Generator architecture
+Original architecture:  
+![res_f2r](images/res_exp/1.png)
+![res_r2f](images/res_exp/_2.png)
+
+ResUNet:  
+![resunet_f2r](images/resunet_exp/2.png)
+![resunet_r2f](images/resunet_exp/_4.png)
+
+UNet:  
+![unet_f2r](images/unet_exp/3.png)
+![unet_r2f](images/unet_exp/_3.png)
