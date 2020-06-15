@@ -24,4 +24,4 @@ The second part of the homework was based on a custom fox2raccoon dataset consis
 ![unet_f2r](images/unet_exp/3.png)
 ![unet_r2f](images/unet_exp/_3.png)
 
-Additional images can be found in the "images" folder, all the pretrained models are in "models".
+As one can see, the images produced by original UNet are either similar or have higher quality than the ones produced by the original architecture (for more samples, see the "images" folder).
