@@ -44,13 +44,13 @@ Considering one is artificially limited to Gaussians in the bottleneck part, sam
 ![sampling](output/conv_vae/sample_conv_vae.png)  
 
 ## CVAE
-Conditional autoencoder taking into account the image label while training was implemented with the fully-connected architecture on the MNIST dataset. By feeding Gaussian random vectors concatenated with the digit labels one can sample images from the desired class:
+Conditional autoencoder taking into account the image label while training was implemented with the fully-connected architecture on the MNIST dataset. By feeding Gaussian random vectors concatenated with the digit labels one can sample images from the desired class:  
 All digits:  
-![cvae_sampling](output/cvae/cvae_all_digits.png)
-Five:  
-![cvae_fives](output/cvae/cvae_fives.png)
-Seven:  
-![cvae_sevens](output/cvae/cvae_sevens.png)
+![cvae_sampling](output/cvae/cvae_all_digits.png)  
+Fives:  
+![cvae_fives](output/cvae/cvae_fives.png)  
+Sevens:  
+![cvae_sevens](output/cvae/cvae_sevens.png)  
 
 
 
