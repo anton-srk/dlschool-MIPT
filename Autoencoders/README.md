@@ -17,6 +17,21 @@ Basic example of image reconstruction using the convolutional autoencoder looks 
 One of the most obvious uses of autoencoders with the human faces dataset is to add smiles:
 ![to_smile](output/conv_vanilla/to_smile_conv.png)
 
+
+## Denoising and occlusion
+Other exciting examples of practical use of autoencoders include image denoising and de-occlusion:
+
+### Denoising
+![noisy](output/conv_vanilla/conv_denoising_0.png)
+![reconstruction](output/conv_vanilla/conv_denoising_1.png)
+![original](output/conv_vanilla/conv_denoising_2.png)  
+
+### Deocclusion
+![occluded](output/conv_vanilla/conv_occlusion_0.png)
+![reconstruction](output/conv_vanilla/conv_occlusion_1.png)
+![original](output/conv_vanilla/conv_occlusion_2.png)  
+
+
 ## VAE
 
 ### Reconstruction
@@ -31,6 +46,9 @@ Considering one is artificially limited to Gaussians in the bottleneck part, sam
 ## CVAE
 Conditional autoencoder taking into account the image label while training was implemented with the fully-connected architecture on the MNIST dataset. By feeding Gaussian random vectors concatenated with the digit labels one can sample images from the desired class:
 ![cvae_sampling](output/cvae/cvae_all_digits.png)  
+
+
+
 
 
 
