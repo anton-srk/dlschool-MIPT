@@ -11,4 +11,30 @@ Some of the results of the homework are shown below (for full code and tasks, pl
 ## Image reconstruction
 Basic example of image reconstruction using the convolutional autoencoder looks like this:
 ![ini](output/conv_vanilla/conv_example_0.png)
-![reconstruction](output/conv_vanilla/conv_example_0.png)  
+![reconstruction](output/conv_vanilla/conv_example_1.png)  
+
+## Image modification
+One of the most obvious uses of autoencoders with the human faces dataset is to add smiles:
+![to_smile](output/conv_vanilla/to_smile_conv.png)
+
+## VAE
+
+### Reconstruction
+Variational autoencoder implemented here used basically the same architecture as the vanilla one except for the bottleneck part (the one with sampling from Gaussian distributions given mean and variance values). Image reconstruction in this case looks like the following:
+![ini](output/conv_vae/conv_vae_example_0.png)
+![reconstruction](output/conv_vae/conv_vae_example_1.png)  
+
+### Sampling
+Considering one is artificially limited to Gaussians in the bottleneck part, sampling from this distribution and feeding the result to the decoder produces the images shown below:
+![sampling](output/conv_vae/sample_conv_vae.png)  
+
+## CVAE
+Conditional autoencoder taking into account the image label while training was implemented with the fully-connected architecture on the MNIST dataset. By feeding Gaussian random vectors concatenated with the digit labels one can sample images from the desired class:
+![cvae_sampling](output/cvae/cvae_all_digits.png)  
+
+
+
+
+
+
+
