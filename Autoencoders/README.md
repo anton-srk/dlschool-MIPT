@@ -25,7 +25,7 @@ Variational autoencoder implemented here used basically the same architecture as
 ![reconstruction](output/conv_vae/conv_vae_example_1.png)  
 
 ### Sampling
-Considering one is artificially limited to Gaussians in the bottleneck part, sampling from this distribution and feeding the result to the decoder produces the images shown below:
+Considering one is artificially limited to Gaussians in the bottleneck part, sampling from this distribution and feeding the result to the decoder produces the images shown below:  
 ![sampling](output/conv_vae/sample_conv_vae.png)  
 
 ## CVAE
